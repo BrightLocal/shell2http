@@ -1,6 +1,6 @@
-module github.com/msoap/shell2http
+module github.com/BrightLocal/shell2http
 
-go 1.18
+go 1.20
 
 require (
 	github.com/mattn/go-shellwords v1.0.12

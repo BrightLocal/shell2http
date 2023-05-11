@@ -1,8 +1,6 @@
 release:
   name_template: "{{ .Version }} - {{ .Date }}"
   draft: true
-  header: |
-    [![Github Releases ({{ .Tag }})](https://img.shields.io/github/downloads/msoap/shell2http/{{ .Tag }}/total.svg)](https://github.com/msoap/shell2http/releases/latest) [![Github All Releases](https://img.shields.io/github/downloads/msoap/shell2http/total.svg)](https://github.com/msoap/shell2http/releases)
 
 builds:
   - env:
@@ -10,15 +8,9 @@ builds:
     goos:
       - linux
       - darwin
-      - windows
     goarch:
-      - 386
       - amd64
-      - arm
       - arm64
-    ignore:
-      - goos: windows
-        goarch: arm
     flags:
       - -trimpath
     ldflags:
@@ -26,7 +18,7 @@ builds:
 
 nfpms:
   - 
-    homepage: https://github.com/msoap/{{ .ProjectName }}
+    homepage: https://github.com/BrightLocal/{{ .ProjectName }}
     description: HTTP-server to execute shell commands. Designed for development, prototyping or remote control.
     license: MIT
     formats:
@@ -43,9 +35,6 @@ nfpms:
 
 archives:
   -
-    format_overrides:
-      - goos: windows
-        format: zip
     files:
       - README*
       - LICENSE*

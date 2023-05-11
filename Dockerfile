@@ -1,12 +1,12 @@
-# docker build -t msoap/shell2http .
+# docker build -t BrightLocal/shell2http .
 
 # build image
 FROM --platform=$BUILDPLATFORM golang:alpine as go_builder
 
 RUN apk add --no-cache git
 
-ADD . $GOPATH/src/github.com/msoap/shell2http
-WORKDIR $GOPATH/src/github.com/msoap/shell2http
+ADD . $GOPATH/src/github.com/BrightLocal/shell2http
+WORKDIR $GOPATH/src/github.com/BrightLocal/shell2http
 
 ENV CGO_ENABLED=0
 # GOARM=6 affects only "arm" builds
