@@ -2,7 +2,7 @@ shell2http
 ==========
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/msoap/shell2http.svg)](https://pkg.go.dev/github.com/msoap/shell2http)
-[![Go build status](https://github.com/BrightLocal/shell2http/actions/workflows/go.yml/badge.svg)](https://github.com/BrightLocal/shell2http/actions/workflows/go.yml)
+[![Go](https://github.com/BrightLocal/shell2http/actions/workflows/go.yml/badge.svg)](https://github.com/BrightLocal/shell2http/actions/workflows/go.yml)
 [![Github Releases](https://img.shields.io/github/downloads/BrightLocal/shell2http/total.svg)](https://github.com/BrightLocal/shell2http/releases)
 
 HTTP-server to execute shell commands. Designed for development, prototyping or remote control.
